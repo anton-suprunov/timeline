@@ -1,3 +1,373 @@
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-ExtraBold.eot");
+  src: url("../../fonts/Trim-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-ExtraBold.woff") format("woff"), url("../../fonts/Trim-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-Regular.eot");
+  src: url("../../fonts/Trim-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-Regular.woff") format("woff"), url("../../fonts/Trim-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-SemiBold.eot");
+  src: url("../../fonts/Trim-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-SemiBold.woff") format("woff"), url("../../fonts/Trim-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-Thin.eot");
+  src: url("../../fonts/Trim-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-Thin.woff") format("woff"), url("../../fonts/Trim-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-Medium.eot");
+  src: url("../../fonts/Trim-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-Medium.woff") format("woff"), url("../../fonts/Trim-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-Light.eot");
+  src: url("../../fonts/Trim-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-Light.woff") format("woff"), url("../../fonts/Trim-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trim';
+  src: url("../../fonts/Trim-Bold.eot");
+  src: url("../../fonts/Trim-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Trim-Bold.woff") format("woff"), url("../../fonts/Trim-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+.tml {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding-left: 13px;
+  padding-right: 96px;
+  padding-top: 215px;
+  padding-bottom: 220px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Trim', Helvetica Neue, Helvetica, Arial; }
+
+.tml__section {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 8.21%;
+  float: left;
+  height: 25px;
+  margin-right: 1px;
+  position: relative; }
+  .tml__section.tml__section_gray {
+    background-color: #cadfe1; }
+  .tml__section.tml__section_blue {
+    background-color: #01a6cf;
+    color: #01a6cf; }
+    .tml__section.tml__section_blue.tml__section_corner:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 0 3px;
+      border-color: #01a6cf transparent transparent transparent; }
+  .tml__section.tml__section_green {
+    background-color: #c3d672; }
+  .tml__section.tml__section_yellow {
+    background-color: #ddc55f;
+    color: #ddc55f; }
+    .tml__section.tml__section_yellow.tml__section_corner:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 0 3px;
+      border-color: #ddc55f transparent transparent transparent; }
+  .tml__section.tml__section_grad {
+    background-image: url(../../img/grad-bg.png);
+    background-repeat: repeat-x;
+    color: #c3d672; }
+    .tml__section.tml__section_grad.tml__section_corner:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 0 3px;
+      border-color: #c3d672 transparent transparent transparent; }
+  .tml__section.tml__section_start-line:after {
+    content: "";
+    width: 5px;
+    height: 44px;
+    background-color: #006680;
+    position: absolute;
+    right: 22%;
+    top: -6px; }
+  .tml__section.tml__section_corner:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: -3px; }
+  .tml__section:last-of-type:after {
+    content: "";
+    background-color: #006680;
+    height: 1px;
+    width: 100px;
+    right: -100px;
+    top: 50%;
+    position: absolute;
+    margin-top: -1px; }
+
+.tml__month {
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  padding-top: 14px;
+  padding-left: 7px; }
+
+.tml__year {
+  width: 26px;
+  height: 14px;
+  background-color: #006680;
+  text-align: center;
+  line-height: 14px;
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  position: absolute; }
+  .tml__year.tml__year_prev {
+    top: 199px;
+    left: 13px; }
+  .tml__year.tml__year_next {
+    top: 209px;
+    right: 65px; }
+
+.tml__text {
+  color: inherit;
+  font-size: 16px;
+  white-space: nowrap;
+  margin: 6px 0 0;
+  font-weight: 500;
+  background: #fff;
+  position: relative;
+  z-index: 6;
+  padding: 2px 0;
+  width: 200px; }
+  .tml__text.tml__text_14 {
+    font-size: 14px; }
+  .tml__text.tml__text_small {
+    font-size: 10px;
+    padding-left: 2px;
+    display: inline-block;
+    margin-top: 0;
+    position: relative;
+    top: -1px;
+    font-weight: 300; }
+  .tml__text.tml__text_wrap {
+    padding-left: 0;
+    top: 0;
+    display: block;
+    margin-top: -5px; }
+
+.tml__strategy {
+  color: #006680;
+  position: absolute;
+  right: 15px;
+  font-size: 11px;
+  top: 231px;
+  z-index: 8; }
+
+.tml__milestone {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  position: absolute;
+  text-align: center;
+  color: #006580;
+  width: 140px; }
+  .tml__milestone.tml__milestone_top {
+    height: 211px;
+    top: -186px; }
+  .tml__milestone.tml__milestone_bottom {
+    height: 213px;
+    bottom: -188px; }
+    .tml__milestone.tml__milestone_bottom:after {
+      top: 9px; }
+    .tml__milestone.tml__milestone_bottom:before {
+      top: 16px; }
+  .tml__milestone.tml__milestone_1 {
+    background-image: url(../../img/logo-1.png);
+    left: -11px;
+    padding-top: 84px; }
+  .tml__milestone.tml__milestone_2 {
+    background-image: url(../../img/logo-2.png);
+    left: -36px;
+    padding-top: 166px;
+    background-position: 54% 90px; }
+    .tml__milestone.tml__milestone_2:before {
+      height: 69px;
+      left: 73px; }
+    .tml__milestone.tml__milestone_2:after {
+      left: 73px; }
+  .tml__milestone.tml__milestone_3 {
+    background-image: url(../../img/logo-3.png);
+    padding-top: 77px;
+    left: -19px;
+    top: -179px; }
+    .tml__milestone.tml__milestone_3:before {
+      left: 82px;
+      height: 63px; }
+    .tml__milestone.tml__milestone_3:after {
+      left: 82px;
+      bottom: 15px; }
+  .tml__milestone.tml__milestone_4 {
+    background-image: url(../../img/logo-4.png);
+    padding-top: 167px;
+    background-position: 50% 89px;
+    left: -2px; }
+    .tml__milestone.tml__milestone_4:before {
+      left: 65px;
+      height: 69px; }
+    .tml__milestone.tml__milestone_4:after {
+      left: 65px; }
+    .tml__milestone.tml__milestone_4 .tml__title {
+      font-weight: 400;
+      font-size: 12px; }
+  .tml__milestone.tml__milestone_5 {
+    background-image: url(../../img/logo-5.png);
+    padding-top: 77px;
+    top: -179px;
+    left: -3px; }
+    .tml__milestone.tml__milestone_5:before {
+      height: 64px;
+      left: 63px; }
+    .tml__milestone.tml__milestone_5:after {
+      bottom: 15px;
+      left: 63px; }
+  .tml__milestone.tml__milestone_6 {
+    background-image: url(../../img/logo-6.png);
+    padding-top: 74px;
+    top: -176px;
+    left: -10px;
+    height: 200px; }
+    .tml__milestone.tml__milestone_6:before {
+      height: 57px; }
+  .tml__milestone.tml__milestone_7 {
+    background-image: url(../../img/logo-7.png);
+    padding-top: 82px;
+    top: -183px;
+    left: 28px; }
+    .tml__milestone.tml__milestone_7:before {
+      height: 48px;
+      left: 34px; }
+    .tml__milestone.tml__milestone_7:after {
+      bottom: 11px;
+      left: 34px; }
+    .tml__milestone.tml__milestone_7 .tml__title {
+      padding-left: 4px;
+      white-space: nowrap; }
+  .tml__milestone.tml__milestone_8 {
+    background-image: url(../../img/logo-8.png);
+    padding-top: 167px;
+    background-position: 50% 89px;
+    left: -9px; }
+    .tml__milestone.tml__milestone_8:before {
+      left: 71px;
+      height: 69px; }
+    .tml__milestone.tml__milestone_8:after {
+      left: 71px; }
+  .tml__milestone.tml__milestone_9 {
+    background-image: url(../../img/logo-9.png);
+    padding-top: 167px;
+    background-position: 50% 86px;
+    left: -42px; }
+    .tml__milestone.tml__milestone_9:before {
+      left: 75px;
+      height: 60px;
+      top: 25px;
+      z-index: 5; }
+    .tml__milestone.tml__milestone_9:after {
+      left: 75px;
+      top: 5px; }
+  .tml__milestone:before {
+    content: "";
+    width: 2px;
+    height: 29px;
+    background-color: #006580;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    bottom: 16px;
+    opacity: 0.7; }
+  .tml__milestone:after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #006580;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    margin-left: -4px;
+    border-radius: 50%; }
+
+.tml__date {
+  font-weight: 300;
+  font-size: 11px; }
+
+.tml__title {
+  margin: 0 0 0;
+  font-size: 13px;
+  font-weight: 500; }
+  .tml__title span {
+    font-weight: 300;
+    display: block; }
+
+.tml__milestone-text {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 300;
+  font-size: 9px;
+  margin-top: 2px;
+  line-height: 11px; }
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .tml__section {
+    width: 8.182%; }
+    .tml__section.tml__section_start-line:after {
+      right: 10%; }
+  .tml__milestone {
+    background-size: 40% auto;
+    background-position: 50% 21px; }
+  .tml__title {
+    font-size: 10px; }
+  .tml__milestone.tml__milestone_4 .tml__title {
+    font-size: 9px; }
+  .tml__text {
+    font-size: 13px; }
+    .tml__text.tml__text_small {
+      font-size: 9px; }
+  .tml__milestone.tml__milestone_1 {
+    left: -25px; }
+  .tml__milestone.tml__milestone_3 {
+    left: -35px; }
+  .tml__milestone.tml__milestone_4 {
+    left: -18px; }
+  .tml__milestone.tml__milestone_5 {
+    left: -16px; }
+  .tml__milestone.tml__milestone_6 {
+    left: -23px;
+    top: -179px; }
+  .tml__milestone.tml__milestone_7 {
+    left: 15px; }
+  .tml__milestone.tml__milestone_8 {
+    left: -22px; } }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

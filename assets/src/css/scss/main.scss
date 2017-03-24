@@ -9,6 +9,11 @@ $font-name: 'Montserrat', arial, sans-serif;
 }
 
 //main css here
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'timeline.scss';
+
 
 /* ==========================================================================
    Media Queries

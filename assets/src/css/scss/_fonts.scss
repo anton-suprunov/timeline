@@ -1,0 +1,71 @@
+$fonts-path: '../../fonts/';
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-ExtraBold.eot');
+	src: url('#{$fonts-path}Trim-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-ExtraBold.woff') format('woff'),
+		url('#{$fonts-path}Trim-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-Regular.eot');
+	src: url('#{$fonts-path}Trim-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-Regular.woff') format('woff'),
+		url('#{$fonts-path}Trim-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-SemiBold.eot');
+	src: url('#{$fonts-path}Trim-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-SemiBold.woff') format('woff'),
+		url('#{$fonts-path}Trim-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-Thin.eot');
+	src: url('#{$fonts-path}Trim-Thin.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-Thin.woff') format('woff'),
+		url('#{$fonts-path}Trim-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-Medium.eot');
+	src: url('#{$fonts-path}Trim-Medium.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-Medium.woff') format('woff'),
+		url('#{$fonts-path}Trim-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-Light.eot');
+	src: url('#{$fonts-path}Trim-Light.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-Light.woff') format('woff'),
+		url('#{$fonts-path}Trim-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Trim';
+	src: url('#{$fonts-path}Trim-Bold.eot');
+	src: url('#{$fonts-path}Trim-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Trim-Bold.woff') format('woff'),
+		url('#{$fonts-path}Trim-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
