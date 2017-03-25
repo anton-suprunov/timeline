@@ -129,6 +129,8 @@
   font-size: 10px;
   padding-top: 14px;
   padding-left: 7px; }
+  .tml__month.tml__month_mobile {
+    display: none; }
 
 .tml__year {
   width: 26px;
@@ -157,7 +159,7 @@
   position: relative;
   z-index: 6;
   padding: 2px 0;
-  width: 200px; }
+  width: 165px; }
   .tml__text.tml__text_14 {
     font-size: 14px; }
   .tml__text.tml__text_small {
@@ -173,6 +175,8 @@
     top: 0;
     display: block;
     margin-top: -5px; }
+  .tml__text.tml__text_mobile {
+    display: none; }
 
 .tml__strategy {
   color: #006680;
@@ -212,7 +216,7 @@
     background-position: 54% 90px; }
     .tml__milestone.tml__milestone_2:before {
       height: 69px;
-      left: 73px; }
+      left: 74px; }
     .tml__milestone.tml__milestone_2:after {
       left: 73px; }
   .tml__milestone.tml__milestone_3 {
@@ -221,10 +225,10 @@
     left: -19px;
     top: -179px; }
     .tml__milestone.tml__milestone_3:before {
-      left: 82px;
+      left: 83px;
       height: 63px; }
     .tml__milestone.tml__milestone_3:after {
-      left: 82px;
+      left: 83px;
       bottom: 15px; }
   .tml__milestone.tml__milestone_4 {
     background-image: url(../../img/logo-4.png);
@@ -232,7 +236,7 @@
     background-position: 50% 89px;
     left: -2px; }
     .tml__milestone.tml__milestone_4:before {
-      left: 65px;
+      left: 66px;
       height: 69px; }
     .tml__milestone.tml__milestone_4:after {
       left: 65px; }
@@ -246,7 +250,7 @@
     left: -3px; }
     .tml__milestone.tml__milestone_5:before {
       height: 64px;
-      left: 63px; }
+      left: 64px; }
     .tml__milestone.tml__milestone_5:after {
       bottom: 15px;
       left: 63px; }
@@ -265,7 +269,7 @@
     left: 28px; }
     .tml__milestone.tml__milestone_7:before {
       height: 48px;
-      left: 34px; }
+      left: 35px; }
     .tml__milestone.tml__milestone_7:after {
       bottom: 11px;
       left: 34px; }
@@ -278,7 +282,7 @@
     background-position: 50% 89px;
     left: -9px; }
     .tml__milestone.tml__milestone_8:before {
-      left: 71px;
+      left: 72px;
       height: 69px; }
     .tml__milestone.tml__milestone_8:after {
       left: 71px; }
@@ -288,27 +292,28 @@
     background-position: 50% 86px;
     left: -42px; }
     .tml__milestone.tml__milestone_9:before {
-      left: 75px;
+      left: 76px;
       height: 60px;
       top: 25px;
       z-index: 5; }
     .tml__milestone.tml__milestone_9:after {
       left: 75px;
       top: 5px; }
+    .tml__milestone.tml__milestone_9 .tml__title {
+      padding-left: 15px; }
   .tml__milestone:before {
     content: "";
-    width: 2px;
+    width: 1px;
     height: 29px;
     background-color: #006580;
     position: absolute;
-    left: 50%;
+    left: 51%;
     margin-left: -1px;
-    bottom: 16px;
-    opacity: 0.7; }
+    bottom: 16px; }
   .tml__milestone:after {
     content: "";
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
     background-color: #006580;
     position: absolute;
     bottom: 9px;
@@ -367,6 +372,239 @@
     left: 15px; }
   .tml__milestone.tml__milestone_8 {
     left: -22px; } }
+
+@media screen and (max-width: 768px) {
+  .tml {
+    padding-top: 45px;
+    padding-left: 134px; }
+  .tml__year.tml__year_prev {
+    top: 26px;
+    left: 135px;
+    width: 28px; }
+  .tml__year.tml__year_next {
+    bottom: 193px;
+    left: 136px;
+    width: 27px;
+    height: 16px;
+    right: auto;
+    top: auto;
+    z-index: 3; }
+    .tml__year.tml__year_next:after {
+      content: '';
+      left: -3px;
+      top: 4px;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 3px 0;
+      border-color: transparent #006680 transparent transparent; }
+  .tml__section {
+    float: none;
+    width: 29px;
+    height: 79px;
+    margin-right: 0;
+    margin-bottom: 1px; }
+    .tml__section.tml__section_start-line:after {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      height: 49px;
+      top: 34px;
+      right: 11px; }
+    .tml__section.tml__section_corner:before {
+      content: "";
+      position: absolute;
+      left: -3px;
+      bottom: auto;
+      top: 5px; }
+    .tml__section.tml__section_blue.tml__section_corner:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 3px 0;
+      border-color: transparent #01a6cf transparent transparent; }
+    .tml__section.tml__section_yellow.tml__section_corner:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 3px 3px 0;
+      border-color: transparent #ddc55f transparent transparent; }
+    .tml__section.tml__section_grad {
+      background-image: url(../../img/grad-bg-vertical.png);
+      background-repeat: no-repeat; }
+      .tml__section.tml__section_grad.tml__section_corner:before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3px 3px 3px 0;
+        border-color: transparent #c3d672 transparent transparent; }
+    .tml__section:last-of-type:after {
+      height: 111px;
+      width: 1px;
+      right: 13px;
+      top: 100%;
+      position: absolute;
+      margin-top: 0; }
+  .tml__text.tml__text_main {
+    width: 134px;
+    position: absolute;
+    left: -134px;
+    top: -6px;
+    font-size: 19px;
+    padding-right: 13px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: right; }
+  .tml__text.tml__text_small {
+    display: block;
+    width: auto;
+    font-size: 13px; }
+  .tml__text.tml__text_desktop {
+    display: none; }
+  .tml__text.tml__text_mobile {
+    display: block; }
+  .tml__milestone {
+    top: -6px;
+    left: 96px !important;
+    height: auto;
+    padding-left: 93px;
+    background-position: 0 0 !important;
+    text-align: left;
+    padding-top: 0 !important;
+    width: 230px;
+    min-height: 100px; }
+    .tml__milestone:before {
+      width: 75px;
+      height: 1px !important;
+      left: -78px !important;
+      margin-left: 0;
+      bottom: auto;
+      top: 65px; }
+    .tml__milestone:after {
+      bottom: auto !important;
+      top: 61px;
+      left: -82px !important;
+      margin-left: 0; }
+    .tml__milestone.tml__milestone_top {
+      top: 0;
+      height: auto; }
+    .tml__milestone.tml__milestone_bottom {
+      bottom: 0;
+      height: auto; }
+    .tml__milestone.tml__milestone_1 .tml__title br {
+      display: none; }
+    .tml__milestone.tml__milestone_2 {
+      top: 25px; }
+      .tml__milestone.tml__milestone_2:before {
+        top: 28px;
+        width: 65px; }
+      .tml__milestone.tml__milestone_2:after {
+        top: 24px; }
+    .tml__milestone.tml__milestone_3 {
+      top: 44px; }
+      .tml__milestone.tml__milestone_3:before {
+        top: 25px;
+        width: 68px; }
+      .tml__milestone.tml__milestone_3:after {
+        top: 21px; }
+    .tml__milestone.tml__milestone_4 {
+      top: 140px; }
+      .tml__milestone.tml__milestone_4:before {
+        top: -16px;
+        width: 1px !important;
+        height: 11px !important;
+        left: 33px !important; }
+      .tml__milestone.tml__milestone_4after {
+        display: none; }
+    .tml__milestone.tml__milestone_5 {
+      top: 149px;
+      padding-top: 10px !important; }
+      .tml__milestone.tml__milestone_5:before {
+        top: -84px;
+        width: 42px; }
+      .tml__milestone.tml__milestone_5:after {
+        top: -88px; }
+      .tml__milestone.tml__milestone_5 .tml__arrow_vert_mobile {
+        position: absolute;
+        top: -84px;
+        left: -37px;
+        width: 1px;
+        background: #006580;
+        height: 117px; }
+      .tml__milestone.tml__milestone_5 .tml__arrow_hor_mobile {
+        position: absolute;
+        top: 32px;
+        left: -37px;
+        width: 25px;
+        background: #006580;
+        height: 1px; }
+    .tml__milestone.tml__milestone_6 {
+      top: 4px;
+      padding-top: 11px !important; }
+      .tml__milestone.tml__milestone_6:before {
+        top: 62px;
+        width: 65px; }
+      .tml__milestone.tml__milestone_6:after {
+        top: 58px; }
+    .tml__milestone.tml__milestone_7 {
+      top: 16px; }
+      .tml__milestone.tml__milestone_7:before {
+        top: 51px;
+        width: 63px; }
+      .tml__milestone.tml__milestone_7:after {
+        top: 48px; }
+    .tml__milestone.tml__milestone_8 {
+      top: 119px;
+      padding-top: 10px !important; }
+      .tml__milestone.tml__milestone_8:before {
+        top: -14px;
+        width: 1px;
+        height: 10px !important;
+        left: 33px !important; }
+      .tml__milestone.tml__milestone_8:after {
+        display: none; }
+    .tml__milestone.tml__milestone_9 {
+      top: 55px;
+      padding-top: 12px !important; }
+      .tml__milestone.tml__milestone_9:before {
+        top: -17px;
+        width: 43px; }
+      .tml__milestone.tml__milestone_9:after {
+        top: -20px; }
+      .tml__milestone.tml__milestone_9 .tml__arrow_vert_mobile {
+        position: absolute;
+        top: -17px;
+        left: -36px;
+        width: 1px;
+        background: #006580;
+        height: 56px; }
+      .tml__milestone.tml__milestone_9 .tml__arrow_hor_mobile {
+        position: absolute;
+        top: 38px;
+        left: -36px;
+        width: 25px;
+        background: #006580;
+        height: 1px; }
+  .tml__milestone-text {
+    text-align: left; }
+  .tml__month {
+    display: none; }
+    .tml__month.tml__month_mobile {
+      display: block;
+      padding-left: 0;
+      padding-top: 4px;
+      text-align: center; }
+  .tml__strategy {
+    left: 17px;
+    font-size: 16px;
+    bottom: 179px;
+    z-index: 8;
+    text-align: right;
+    top: auto;
+    right: auto; } }
 
 /* ==========================================================================
    Media Queries

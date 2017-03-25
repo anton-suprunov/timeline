@@ -23,6 +23,10 @@
   margin-right: 1px;
   position: relative;
 
+  &.tml__section_highlight {
+    //opacity: 0.5 !important;
+  }
+
   &.tml__section_gray {
     background-color: $color-gray;
   }
@@ -99,6 +103,8 @@
   font-size: 10px;
   padding-top: 14px;
   padding-left: 7px;
+
+  &.tml__month_mobile { display: none; }
 }
 
 .tml__year {
@@ -135,7 +141,7 @@
   padding: 2px 0;
 
   // to extend white background
-  width: 200px;
+  width: 165px;
 
   &.tml__text_14 { font-size: 14px }
 
@@ -154,6 +160,10 @@
     top: 0;
     display: block;
     margin-top: -5px;
+  }
+
+  &.tml__text_mobile {
+    display: none;
   }
 }
 
@@ -204,7 +214,7 @@
 
     &:before {
       height:69px;
-      left: 73px;
+      left: 74px;
     }
     &:after {
       left: 73px;
@@ -218,11 +228,11 @@
     top: -179px;
 
     &:before {
-      left: 82px;
+      left: 83px;
       height: 63px;
     }
     &:after {
-      left: 82px;
+      left: 83px;
       bottom: 15px;
     }
   }
@@ -234,7 +244,7 @@
     left: -2px;
 
     &:before {
-      left: 65px;
+      left: 66px;
       height: 69px;
     }
     &:after {
@@ -252,8 +262,9 @@
 
     &:before {
       height: 64px;
-      left: 63px;
+      left: 64px;
     }
+
     &:after {
       bottom: 15px;
       left: 63px;
@@ -278,7 +289,7 @@
 
     &:before {
       height: 48px;
-      left: 34px;
+      left: 35px;
     }
 
     &:after {
@@ -299,7 +310,7 @@
     left: -9px;
 
     &:before {
-      left: 71px;
+      left: 72px;
       height: 69px;
     }
     &:after {
@@ -314,7 +325,7 @@
     left: -42px;
 
     &:before {
-      left: 75px;
+      left: 76px;
       height: 60px;
       top: 25px;
       z-index: 5;
@@ -323,25 +334,25 @@
       left: 75px;
       top: 5px;
     }
+
+    .tml__title { padding-left: 15px }
   }
 
   &:before {
     content: "";
-    width: 2px;
+    width: 1px;
     height: 29px;
     background-color: $color-milestone;
     position: absolute;
-    left: 50%;
+    left: 51%;
     margin-left: -1px;
     bottom: 16px;
-
-    opacity: 0.7;
   }
 
   &:after {
     content: "";
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
     background-color: $color-milestone;
     position: absolute;
     bottom: 9px;
@@ -434,5 +445,324 @@
     &.tml__milestone_8 {
       left: -22px;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tml {
+    padding-top: 45px;
+    padding-left: 134px;
+  }
+
+  .tml__year {
+    &.tml__year_prev {
+      top: 26px;
+      left: 135px;
+      width: 28px;
+    }
+
+    &.tml__year_next {
+      bottom: 193px;
+      left: 136px;
+      width: 27px;
+      height: 16px;
+      right: auto;
+      top: auto;
+      z-index: 3;
+
+      &:after {
+        content: '';
+        left: -3px;
+        top: 4px;
+        position: absolute;
+
+        @include corner-left($color-dark-blue);
+      }
+    }
+  }
+
+  .tml__section {
+    float: none;
+    width: 29px;
+    height: 79px;
+    margin-right: 0;
+    margin-bottom: 1px;
+
+    &.tml__section_start-line:after {
+      transform: rotate(90deg);
+      height: 49px;
+      top: 34px;
+      right: 11px;
+    }
+
+    &.tml__section_corner {
+      &:before {
+        content: "";
+        position: absolute;
+        left: -3px;
+        bottom: auto;
+        top: 5px;
+      }
+    }
+
+    &.tml__section_blue {
+      &.tml__section_corner:before {
+        @include corner-left($color-blue);
+      }
+    }
+
+    &.tml__section_yellow {
+      &.tml__section_corner:before {
+        @include corner-left($color-yellow);
+      }
+    }
+
+    &.tml__section_grad {
+      background-image: url(#{$img-path}grad-bg-vertical.png);
+      background-repeat: no-repeat;
+      &.tml__section_corner:before {
+        @include corner-left($color-green);
+      }
+    }
+
+    &:last-of-type:after {
+      height: 111px;
+      width: 1px;
+      right: 13px;
+      top: 100%;
+      position: absolute;
+      margin-top: 0;
+    }
+  }
+
+  .tml__text {
+
+    &.tml__text_main {
+      width: 134px;
+      position: absolute;
+      left: -134px;
+      top: -6px;
+      font-size: 19px;
+      padding-right: 13px;
+      box-sizing: border-box;
+      margin-top: 0;
+      padding-top: 0;
+      text-align: right;
+    }
+
+    &.tml__text_small {
+      display: block;
+      width: auto;
+      font-size: 13px;
+    }
+    &.tml__text_desktop {
+      display: none;
+    }
+    &.tml__text_mobile {
+      display: block;
+    }
+  }
+
+  .tml__milestone {
+    top: -6px;
+    left: 96px !important;
+    height: auto;
+    padding-left: 93px;
+    background-position: 0 0 !important;
+    text-align: left;
+    padding-top: 0 !important;
+    width: 230px;
+    min-height: 100px;
+    
+    &:before {
+      width: 75px;
+      height: 1px !important;
+      left: -78px !important;
+      margin-left: 0;
+      bottom: auto;
+      top: 65px;
+    }
+
+    &:after {
+      bottom: auto !important;
+      top: 61px;
+      left: -82px !important;
+      margin-left: 0;
+    }
+
+    &.tml__milestone_top {
+      top: 0;
+      height: auto;
+    }
+    &.tml__milestone_bottom {
+      bottom: 0;
+      height: auto;
+    }
+
+    &.tml__milestone_1 {
+      .tml__title br { display: none }
+    }
+
+    &.tml__milestone_2 {
+      top: 25px;
+
+      &:before {
+        top: 28px;
+        width: 65px;
+      }
+
+      &:after { top:24px }
+    }
+
+    &.tml__milestone_3 {
+      top: 44px;
+
+      &:before {
+        top: 25px;
+        width: 68px;
+      }
+      &:after { top: 21px }
+    }
+
+    &.tml__milestone_4 {
+      top: 140px;
+
+      &:before {
+        top: -16px;
+        width: 1px !important;
+        height: 11px !important;
+        left: 33px !important;
+      }
+
+      &after {
+        display: none;
+      }
+    }
+
+    &.tml__milestone_5 {
+      top: 149px;
+      padding-top: 10px !important;
+
+      &:before {
+        top: -84px;
+        width: 42px;
+      }
+      &:after {
+        top: -88px;
+      }
+
+      .tml__arrow_vert_mobile {
+        position: absolute;
+        top: -84px;
+        left: -37px;
+        width: 1px;
+        background: $color-milestone;
+        height: 117px;
+      }
+
+      .tml__arrow_hor_mobile {
+        position: absolute;
+        top: 32px;
+        left: -37px;
+        width: 25px;
+        background: #006580;
+        height: 1px;
+      }
+    }
+
+    &.tml__milestone_6 {
+      top: 4px;
+      padding-top: 11px !important;
+
+      &:before {
+        top: 62px;
+        width: 65px;
+      }
+      &:after { top:58px; }
+    }
+
+    &.tml__milestone_7 {
+      top: 16px;
+
+      &:before {
+        top: 51px;
+        width: 63px;
+      }
+
+      &:after {
+        top: 48px;
+      }
+    }
+
+    &.tml__milestone_8 {
+      top: 119px;
+      padding-top: 10px !important;
+      &:before {
+        top: -14px;
+        width: 1px;
+        height: 10px !important;
+        left: 33px !important;
+      }
+      &:after {
+        display: none;
+      }
+    }
+
+    &.tml__milestone_9 {
+      top: 55px;
+      padding-top: 12px !important;
+
+      &:before {
+        top: -17px;
+        width: 43px;
+      }
+      &:after {
+        top: -20px;
+      }
+
+      .tml__arrow_vert_mobile {
+        position: absolute;
+        top: -17px;
+        left: -36px;
+        width: 1px;
+        background: $color-milestone;
+        height: 56px;
+      }
+
+      .tml__arrow_hor_mobile {
+        position: absolute;
+        top: 38px;
+        left: -36px;
+        width: 25px;
+        background: #006580;
+        height: 1px;
+      }
+    }
+
+  }
+
+  .tml__milestone-text {
+    text-align: left;
+  }
+
+  .tml__month {
+    display: none;
+
+    &.tml__month_mobile {
+      display: block;
+      padding-left: 0;
+      padding-top: 4px;
+      text-align: center;
+    }
+  }
+
+  .tml__strategy {
+    left: 17px;
+    font-size: 16px;
+    bottom: 179px;
+    z-index: 8;
+    text-align: right;
+    top: auto;
+    right: auto;
   }
 }
