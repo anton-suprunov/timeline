@@ -382,7 +382,7 @@
   .tml__year.tml__year_prev {
     top: 26px;
     left: 135px;
-    width: 28px; }
+    width: 29px; }
   .tml__year.tml__year_next {
     bottom: 193px;
     left: 136px;
@@ -614,7 +614,8 @@
 
 @media screen and (max-width: 480px) {
   .tml {
-    padding-left: 96px; }
+    padding-left: 96px;
+    width: 320px; }
   .tml__text.tml__text_main {
     font-size: 13px; }
   .tml__text.tml__text_small {
@@ -701,10 +702,17 @@
     left: 120px; }
   .tml__title {
     font-size: 11px;
-    width: 100px; }
+    width: 120px; }
   .tml__milestone-text {
-    width: 100px;
-    white-space: normal; } }
+    width: 120px;
+    white-space: normal; }
+  .tml__year.tml__year_prev {
+    left: 96px; } }
+
+@media screen and (max-width: 320px) {
+  .tml__title,
+  .tml__milestone-text {
+    width: 100px; } }
 
 /* ==========================================================================
    Media Queries
