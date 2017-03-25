@@ -5,7 +5,14 @@ var theme = null;
 
 	theme = {
 		onReady : function(){
-	        theme.onResize();
+
+			var touchDetect = (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) ? 'touchstart' : 'click';
+
+			function removeHighlight() {
+				$('.tml').removeClass('tml_highlight');
+				$('.tml__section').removeClass('tml__section_highlight');
+			}
+	        
 			$('.tml__hover-area, .tml__month-wrap').hover(function() {
 				var section = $(this).closest('.tml__section');
 				section.addClass('tml__section_highlight');
@@ -15,6 +22,14 @@ var theme = null;
 				section.removeClass('tml__section_highlight');
 				$('.tml').removeClass('tml_highlight');
 			});
+
+			window.addEventListener('touchend', function(event) {
+				if($(event.target).hasClass("tml__hover-area") || $(event.target).hasClass("tml__month")) {
+					removeHighlight();
+				}
+			});
+
+			theme.onResize();
 		},
 		onResize : function() {
 
