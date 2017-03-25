@@ -9,11 +9,10 @@
   overflow: hidden;
   margin: 0 auto;
   position: relative;
-
   font-family: 'Trim', Helvetica Neue, Helvetica, Arial;
 
   &.tml_highlight .tml__section {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   &.tml_highlight .tml__section_highlight {
     opacity: 1;
@@ -34,8 +33,9 @@
   float: left;
   height: 25px;
   position: relative;
-
   cursor: pointer;
+
+  @include transition(all, 0.4s, ease-in-out);
 
   &.tml__section_highlight .tml__month-wrap {
     //opacity: 0.5 !important;

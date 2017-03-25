@@ -60,7 +60,7 @@
   position: relative;
   font-family: 'Trim', Helvetica Neue, Helvetica, Arial; }
   .tml.tml_highlight .tml__section {
-    opacity: 0.5; }
+    opacity: 0.3; }
   .tml.tml_highlight .tml__section_highlight {
     opacity: 1; }
 
@@ -76,7 +76,9 @@
   float: left;
   height: 25px;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
   .tml__section.tml__section_gray {
     background-color: #cadfe1; }
   .tml__section.tml__section_blue {
