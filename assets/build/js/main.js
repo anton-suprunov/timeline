@@ -6,12 +6,14 @@ var theme = null;
 	theme = {
 		onReady : function(){
 	        theme.onResize();
-			$('.tml__milestone').on('mouseenter', function() {
+			$('.tml__hover-area, .tml__month-wrap').hover(function() {
 				var section = $(this).closest('.tml__section');
 				section.addClass('tml__section_highlight');
-			}).on('mouseleave', function() {
+				$('.tml').addClass('tml_highlight');
+			}, function() {
 				var section = $(this).closest('.tml__section');
 				section.removeClass('tml__section_highlight');
+				$('.tml').removeClass('tml_highlight');
 			});
 		},
 		onResize : function() {

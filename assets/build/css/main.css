@@ -59,6 +59,15 @@
   margin: 0 auto;
   position: relative;
   font-family: 'Trim', Helvetica Neue, Helvetica, Arial; }
+  .tml.tml_highlight .tml__section {
+    opacity: 0.5; }
+  .tml.tml_highlight .tml__section_highlight {
+    opacity: 1; }
+
+.tml__month-wrap {
+  position: relative;
+  z-index: 10;
+  border-right: 1px solid #fff; }
 
 .tml__section {
   -webkit-box-sizing: border-box;
@@ -66,8 +75,8 @@
   width: 8.21%;
   float: left;
   height: 25px;
-  margin-right: 1px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .tml__section.tml__section_gray {
     background-color: #cadfe1; }
   .tml__section.tml__section_blue {
@@ -186,6 +195,13 @@
   top: 231px;
   z-index: 8; }
 
+.tml__hover-area {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  left: 12.5%;
+  height: 127px; }
+
 .tml__milestone {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -205,6 +221,9 @@
       top: 9px; }
     .tml__milestone.tml__milestone_bottom:before {
       top: 16px; }
+    .tml__milestone.tml__milestone_bottom .tml__hover-area {
+      bottom: 0;
+      top: auto; }
   .tml__milestone.tml__milestone_1 {
     background-image: url(../../img/logo-1.png);
     left: -11px;
@@ -401,12 +420,13 @@
       border-style: solid;
       border-width: 3px 3px 3px 0;
       border-color: transparent #006680 transparent transparent; }
+  .tml__month-wrap {
+    border-right: none;
+    border-bottom: 1px solid #fff; }
   .tml__section {
     float: none;
     width: 29px;
-    height: 79px;
-    margin-right: 0;
-    margin-bottom: 1px; }
+    height: 79px; }
     .tml__section.tml__section_start-line:after {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);

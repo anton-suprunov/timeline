@@ -11,6 +11,19 @@
   position: relative;
 
   font-family: 'Trim', Helvetica Neue, Helvetica, Arial;
+
+  &.tml_highlight .tml__section {
+    opacity: 0.5;
+  }
+  &.tml_highlight .tml__section_highlight {
+    opacity: 1;
+  }
+}
+
+.tml__month-wrap {
+  position: relative;
+  z-index: 10;
+  border-right: 1px solid #fff;
 }
 
 .tml__section {
@@ -20,11 +33,13 @@
   //max-width: 71px;
   float: left;
   height: 25px;
-  margin-right: 1px;
   position: relative;
 
-  &.tml__section_highlight {
+  cursor: pointer;
+
+  &.tml__section_highlight .tml__month-wrap {
     //opacity: 0.5 !important;
+    //box-shadow: 0 0 10px #000;
   }
 
   &.tml__section_gray {
@@ -176,6 +191,14 @@
   z-index: 8;
 }
 
+.tml__hover-area {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  left: 12.5%;
+  height: 127px;
+}
+
 .tml__milestone {
   @include border-box;
 
@@ -198,6 +221,11 @@
 
     &:after { top: 9px; }
     &:before { top: 16px; }
+
+    .tml__hover-area {
+      bottom: 0;
+      top: auto;
+    }
   }
 
   &.tml__milestone_1 {
@@ -483,12 +511,15 @@
     }
   }
 
+  .tml__month-wrap {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+
   .tml__section {
     float: none;
     width: 29px;
     height: 79px;
-    margin-right: 0;
-    margin-bottom: 1px;
 
     &.tml__section_start-line:after {
       transform: rotate(90deg);
