@@ -376,7 +376,9 @@
 @media screen and (max-width: 768px) {
   .tml {
     padding-top: 45px;
-    padding-left: 134px; }
+    padding-left: 134px;
+    width: 480px;
+    padding-right: 0; }
   .tml__year.tml__year_prev {
     top: 26px;
     left: 135px;
