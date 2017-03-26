@@ -514,6 +514,7 @@
   .tml__month-wrap {
     border-right: none;
     border-bottom: 1px solid #fff;
+    height: 100%;
   }
 
   .tml__section {
@@ -667,7 +668,7 @@
         left: 33px !important;
       }
 
-      &after {
+      &:after {
         display: none;
       }
     }

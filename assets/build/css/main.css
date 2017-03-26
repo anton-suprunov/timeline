@@ -424,7 +424,8 @@
       border-color: transparent #006680 transparent transparent; }
   .tml__month-wrap {
     border-right: none;
-    border-bottom: 1px solid #fff; }
+    border-bottom: 1px solid #fff;
+    height: 100%; }
   .tml__section {
     float: none;
     width: 29px;
@@ -541,7 +542,7 @@
         width: 1px !important;
         height: 11px !important;
         left: 33px !important; }
-      .tml__milestone.tml__milestone_4after {
+      .tml__milestone.tml__milestone_4:after {
         display: none; }
     .tml__milestone.tml__milestone_5 {
       top: 149px;
