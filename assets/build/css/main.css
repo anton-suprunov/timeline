@@ -184,8 +184,9 @@
   .tml__text.tml__text_wrap {
     padding-left: 0;
     top: 0;
+    padding-top: 0;
     display: block;
-    margin-top: -5px; }
+    margin-top: -3px; }
   .tml__text.tml__text_mobile {
     display: none; }
 
