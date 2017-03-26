@@ -169,8 +169,9 @@
   background: #fff;
   position: relative;
   z-index: 6;
-  padding: 2px 0;
-  width: 165px; }
+  padding: 2px 0; }
+  .tml__text.tml__text_has-width {
+    width: 165px; }
   .tml__text.tml__text_14 {
     font-size: 14px; }
   .tml__text.tml__text_small {
@@ -250,7 +251,7 @@
       left: 83px;
       height: 63px; }
     .tml__milestone.tml__milestone_3:after {
-      left: 83px;
+      left: 82px;
       bottom: 15px; }
   .tml__milestone.tml__milestone_4 {
     background-image: url(../../img/logo-4.png);
@@ -483,7 +484,8 @@
     box-sizing: border-box;
     margin-top: 0;
     padding-top: 0;
-    text-align: right; }
+    text-align: right;
+    background-color: transparent; }
   .tml__text.tml__text_small {
     display: block;
     width: auto;

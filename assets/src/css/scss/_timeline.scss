@@ -156,7 +156,9 @@
   padding: 2px 0;
 
   // to extend white background
-  width: 165px;
+  &.tml__text_has-width {
+    width: 165px;
+  }
 
   &.tml__text_14 { font-size: 14px }
 
@@ -261,7 +263,7 @@
       height: 63px;
     }
     &:after {
-      left: 83px;
+      left: 82px;
       bottom: 15px;
     }
   }
@@ -571,7 +573,6 @@
   }
 
   .tml__text {
-
     &.tml__text_main {
       width: 134px;
       position: absolute;
@@ -583,6 +584,7 @@
       margin-top: 0;
       padding-top: 0;
       text-align: right;
+      background-color: transparent;
     }
 
     &.tml__text_small {
