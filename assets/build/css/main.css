@@ -688,7 +688,7 @@
         height: 1px; }
     .tml__milestone.tml__milestone_6 {
       top: 25px; }
-      .tml__milestone.tml__milestone_6:before {
+      .tml__milestone.tml__milestone_6:after {
         top: 16px; }
       .tml__milestone.tml__milestone_6:before {
         top: 20px;
