@@ -637,15 +637,17 @@
 @media screen and (max-width: 480px) {
   .tml {
     padding-left: 96px;
-    width: 320px; }
+    width: 320px;
+    overflow: visible; }
   .tml__text.tml__text_main {
     font-size: 13px; }
   .tml__text.tml__text_small {
     font-size: 10px; }
   .tml__milestone {
     left: 66px !important;
-    background-size: 20% auto;
-    padding-left: 50px; }
+    background-size: 27% auto;
+    padding-left: 50px;
+    width: auto; }
     .tml__milestone:after {
       left: -52px !important; }
     .tml__milestone:before {

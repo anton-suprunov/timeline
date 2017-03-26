@@ -808,6 +808,7 @@
   .tml {
     padding-left: 96px;
     width: 320px;
+    overflow: visible;
   }
 
   .tml__text {
@@ -821,8 +822,9 @@
 
   .tml__milestone {
     left: 66px !important;
-    background-size: 20% auto;
+    background-size: 27% auto;
     padding-left: 50px;
+    width: auto;
     //background-position: 0 0px !important;
 
     &:after {
