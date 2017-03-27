@@ -80,13 +80,15 @@
 
   &.tml__section_start-line {
     &:after {
-      content: "";
-      width: 5px;
-      height: 44px;
       background-color: $color-dark-blue;
       position: absolute;
-      right: 22%;
-      top: -6px;
+      //right: 22%;
+      content: "";
+      width: 5px;
+      height: 40px;
+      //right: 26%;
+      left: 44px;
+      top: -7px;
     }
   }
 
@@ -235,6 +237,13 @@
     background-image: url(#{$img-path}logo-1.png);
     left: -11px;
     padding-top: 84px;
+
+    &:before {
+      //left: 71px;
+    }
+    &:after {
+      //left: auto;
+    }
   }
 
   &.tml__milestone_2 {
@@ -422,7 +431,9 @@
     width: 8.182%;
 
     &.tml__section_start-line:after {
-      right: 10%;
+      //right: 10%;
+      left: 36px;
+      right: auto;
     }
   }
 
@@ -451,6 +462,12 @@
   .tml__milestone {
     &.tml__milestone_1 {
       left: -25px;
+      &:before {
+        left: 72px;
+      }
+      &:after {
+        left: 71px;
+      }
     }
 
     &.tml__milestone_3 {

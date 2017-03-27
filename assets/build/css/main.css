@@ -112,13 +112,13 @@
       border-width: 3px 3px 0 3px;
       border-color: #c3d672 transparent transparent transparent; }
   .tml__section.tml__section_start-line:after {
-    content: "";
-    width: 5px;
-    height: 44px;
     background-color: #006680;
     position: absolute;
-    right: 22%;
-    top: -6px; }
+    content: "";
+    width: 5px;
+    height: 40px;
+    left: 44px;
+    top: -7px; }
   .tml__section.tml__section_corner:before {
     content: "";
     position: absolute;
@@ -368,7 +368,8 @@
   .tml__section {
     width: 8.182%; }
     .tml__section.tml__section_start-line:after {
-      right: 10%; }
+      left: 36px;
+      right: auto; }
   .tml__milestone {
     background-size: 40% auto;
     background-position: 50% 21px; }
@@ -382,6 +383,10 @@
       font-size: 9px; }
   .tml__milestone.tml__milestone_1 {
     left: -25px; }
+    .tml__milestone.tml__milestone_1:before {
+      left: 72px; }
+    .tml__milestone.tml__milestone_1:after {
+      left: 71px; }
   .tml__milestone.tml__milestone_3 {
     left: -35px; }
   .tml__milestone.tml__milestone_4 {
